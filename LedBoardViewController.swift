@@ -55,7 +55,8 @@ class LedBoardViewController: UIViewController {
         
         //순서대로
         sender.tintColor = colorArray[sender.tag]
-
+        viewText.textColor = sender.tintColor
+        
         if sender.tag < colorArray.count - 1{
             sender.tag += 1
         }else{

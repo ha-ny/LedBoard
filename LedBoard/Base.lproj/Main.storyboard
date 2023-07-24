@@ -67,7 +67,7 @@
                                     <constraint firstAttribute="bottom" secondItem="euN-Fi-NKT" secondAttribute="bottom" constant="10" id="raz-Qp-K9k"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KrA-aG-eAe">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrA-aG-eAe">
                                 <rect key="frame" x="40" y="126" width="772" height="186"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
