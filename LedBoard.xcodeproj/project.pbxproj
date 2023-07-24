@@ -13,6 +13,7 @@
 		3F78D8EA2A6EFA7700A61FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78D8E82A6EFA7700A61FB2 /* Main.storyboard */; };
 		3F78D8EC2A6EFA7800A61FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F78D8EB2A6EFA7800A61FB2 /* Assets.xcassets */; };
 		3F78D8EF2A6EFA7800A61FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78D8ED2A6EFA7800A61FB2 /* LaunchScreen.storyboard */; };
+		3F78D8F72A6EFCA400A61FB2 /* LedBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8F62A6EFCA400A61FB2 /* LedBoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F78D8EB2A6EFA7800A61FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F78D8EE2A6EFA7800A61FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F78D8F02A6EFA7800A61FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F78D8F62A6EFCA400A61FB2 /* LedBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedBoardViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3F78D8E12A6EFA7700A61FB2 /* LedBoard */ = {
 			isa = PBXGroup;
 			children = (
+				3F78D8F62A6EFCA400A61FB2 /* LedBoardViewController.swift */,
 				3F78D8E22A6EFA7700A61FB2 /* AppDelegate.swift */,
 				3F78D8E42A6EFA7700A61FB2 /* SceneDelegate.swift */,
 				3F78D8E62A6EFA7700A61FB2 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				3F78D8E72A6EFA7700A61FB2 /* ViewController.swift in Sources */,
 				3F78D8E32A6EFA7700A61FB2 /* AppDelegate.swift in Sources */,
 				3F78D8E52A6EFA7700A61FB2 /* SceneDelegate.swift in Sources */,
+				3F78D8F72A6EFCA400A61FB2 /* LedBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

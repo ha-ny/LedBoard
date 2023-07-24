@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Led Board View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LedBoard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LedBoardViewController" customModule="LedBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,19 +19,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-ZF-H35">
                                 <rect key="frame" x="40" y="23" width="772" height="53"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-Ju-uPm">
-                                        <rect key="frame" x="6" y="10" width="32" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-Ju-uPm">
+                                        <rect key="frame" x="6" y="10" width="623" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euN-Fi-NKT">
-                                        <rect key="frame" x="722" y="10" width="44" height="33"/>
+                                        <rect key="frame" x="721" y="10" width="44" height="33"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Aa"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqY-nt-UqF">
-                                        <rect key="frame" x="649" y="10" width="69" height="33"/>
+                                        <rect key="frame" x="644" y="10" width="69" height="33"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="보내기"/>
@@ -40,21 +40,22 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="SqY-nt-UqF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Tak-Ju-uPm" secondAttribute="trailing" constant="4" id="BO1-Yp-hRL"/>
-                                    <constraint firstItem="euN-Fi-NKT" firstAttribute="leading" secondItem="SqY-nt-UqF" secondAttribute="trailing" constant="4" id="Krr-eX-WT2"/>
+                                    <constraint firstItem="euN-Fi-NKT" firstAttribute="leading" secondItem="SqY-nt-UqF" secondAttribute="trailing" constant="8" id="Krr-eX-WT2"/>
                                     <constraint firstItem="Tak-Ju-uPm" firstAttribute="leading" secondItem="uqI-ZF-H35" secondAttribute="leading" constant="6" id="L5n-Av-FSf"/>
                                     <constraint firstItem="SqY-nt-UqF" firstAttribute="top" secondItem="uqI-ZF-H35" secondAttribute="top" constant="10" id="QsM-iT-UUU"/>
                                     <constraint firstAttribute="height" constant="53" id="SvC-U3-xSA"/>
+                                    <constraint firstItem="SqY-nt-UqF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Tak-Ju-uPm" secondAttribute="trailing" constant="15" id="UCm-2P-feG"/>
                                     <constraint firstItem="euN-Fi-NKT" firstAttribute="top" secondItem="uqI-ZF-H35" secondAttribute="top" constant="10" id="aES-2r-Ciw"/>
-                                    <constraint firstAttribute="trailing" secondItem="euN-Fi-NKT" secondAttribute="trailing" constant="6" id="hNd-K7-vtZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="euN-Fi-NKT" secondAttribute="trailing" constant="7" id="hNd-K7-vtZ"/>
                                     <constraint firstAttribute="bottom" secondItem="SqY-nt-UqF" secondAttribute="bottom" constant="10" id="l6T-Ok-vb9"/>
                                     <constraint firstItem="Tak-Ju-uPm" firstAttribute="top" secondItem="uqI-ZF-H35" secondAttribute="top" constant="10" id="nr8-Tc-AVk"/>
                                     <constraint firstAttribute="bottom" secondItem="Tak-Ju-uPm" secondAttribute="bottom" constant="10" id="q31-oz-Doa"/>
                                     <constraint firstAttribute="bottom" secondItem="euN-Fi-NKT" secondAttribute="bottom" constant="10" id="raz-Qp-K9k"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4z-dU-PQH">
-                                <rect key="frame" x="328.33333333333331" y="145.33333333333334" width="195.33333333333331" height="102.66666666666666"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4z-dU-PQH">
+                                <rect key="frame" x="45" y="156" width="762" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -62,17 +63,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="F4z-dU-PQH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="45" id="5Gr-jI-R0j"/>
                             <constraint firstItem="uqI-ZF-H35" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="JKJ-QE-ZRu"/>
                             <constraint firstAttribute="trailing" secondItem="uqI-ZF-H35" secondAttribute="trailing" constant="40" id="LdI-ge-5av"/>
-                            <constraint firstItem="F4z-dU-PQH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PFT-44-lcN"/>
                             <constraint firstItem="uqI-ZF-H35" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="Z7K-24-qj5"/>
-                            <constraint firstItem="F4z-dU-PQH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vGu-VD-qeT"/>
+                            <constraint firstAttribute="trailing" secondItem="F4z-dU-PQH" secondAttribute="trailing" constant="45" id="iKI-t6-svA"/>
+                            <constraint firstItem="F4z-dU-PQH" firstAttribute="top" secondItem="uqI-ZF-H35" secondAttribute="bottom" constant="80" id="oir-fR-d9W"/>
+                            <constraint firstItem="F4z-dU-PQH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rOq-8e-VzF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sendView" destination="uqI-ZF-H35" id="T3a-8X-IA0"/>
+                        <outletCollection property="buttons" destination="SqY-nt-UqF" collectionClass="NSMutableArray" id="RYq-sg-8bu"/>
+                        <outletCollection property="buttons" destination="euN-Fi-NKT" collectionClass="NSMutableArray" id="Uq8-rw-mTC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.69014084507043" y="-34.351145038167935"/>
+            <point key="canvasLocation" x="131.25" y="-34.782608695652179"/>
         </scene>
     </scenes>
     <resources>
