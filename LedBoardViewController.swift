@@ -11,6 +11,8 @@ class LedBoardViewController: UIViewController {
 
     @IBOutlet var sendView: UIView!
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet var sendTextField: UITextField!
+    @IBOutlet var viewText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,11 @@ class LedBoardViewController: UIViewController {
         sendView.layer.cornerRadius = 8
         desingButtons()
     }
+    
+    @IBAction func sendButtonClick(_ sender: UIButton) {
+        viewText.text = sendTextField.text
+    }
+    
     
     func desingButtons(){
         for button in buttons{
