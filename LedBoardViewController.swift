@@ -15,6 +15,8 @@ class LedBoardViewController: UIViewController {
     @IBOutlet var viewText: UITextView!
     @IBOutlet var textColorButton: UIButton!
     
+    let colorArray: [UIColor] = [.red, .orange, .yellow, .green, .blue, .purple]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,8 +50,6 @@ class LedBoardViewController: UIViewController {
 //        }
         
         //Array
-        let colorArray: [UIColor] = [.red, .orange, .yellow, .green, .blue, .purple]
-        
         //램덤
         //sender.tintColor = colorArray.randomElement()
         
