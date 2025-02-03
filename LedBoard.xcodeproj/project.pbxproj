@@ -7,25 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F639CCE2D4E0A9B007A807A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F639CCD2D4E0A9B007A807A /* SnapKit */; };
+		3F639CD22D4E0CBD007A807A /* DisplayBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F639CD12D4E0CBD007A807A /* DisplayBoardView.swift */; };
+		3F639CD42D4E0D41007A807A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F639CD32D4E0D41007A807A /* SettingView.swift */; };
+		3F639CD92D4E14F0007A807A /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F639CD82D4E14F0007A807A /* ColorType.swift */; };
+		3F639CDB2D4E1654007A807A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F639CDA2D4E1654007A807A /* SettingViewController.swift */; };
+		3F639CDE2D4E2759007A807A /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F639CDD2D4E2759007A807A /* SettingManager.swift */; };
 		3F78D8E32A6EFA7700A61FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8E22A6EFA7700A61FB2 /* AppDelegate.swift */; };
 		3F78D8E52A6EFA7700A61FB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8E42A6EFA7700A61FB2 /* SceneDelegate.swift */; };
-		3F78D8E72A6EFA7700A61FB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8E62A6EFA7700A61FB2 /* ViewController.swift */; };
-		3F78D8EA2A6EFA7700A61FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78D8E82A6EFA7700A61FB2 /* Main.storyboard */; };
+		3F78D8E72A6EFA7700A61FB2 /* DisplayBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8E62A6EFA7700A61FB2 /* DisplayBoardViewController.swift */; };
 		3F78D8EC2A6EFA7800A61FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F78D8EB2A6EFA7800A61FB2 /* Assets.xcassets */; };
 		3F78D8EF2A6EFA7800A61FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78D8ED2A6EFA7800A61FB2 /* LaunchScreen.storyboard */; };
-		3F78D8F72A6EFCA400A61FB2 /* LedBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8F62A6EFCA400A61FB2 /* LedBoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F639CD12D4E0CBD007A807A /* DisplayBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBoardView.swift; sourceTree = "<group>"; };
+		3F639CD32D4E0D41007A807A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		3F639CD82D4E14F0007A807A /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		3F639CDA2D4E1654007A807A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		3F639CDD2D4E2759007A807A /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
 		3F78D8DF2A6EFA7700A61FB2 /* LedBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F78D8E22A6EFA7700A61FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F78D8E42A6EFA7700A61FB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F78D8E62A6EFA7700A61FB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F78D8E92A6EFA7700A61FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F78D8E62A6EFA7700A61FB2 /* DisplayBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBoardViewController.swift; sourceTree = "<group>"; };
 		3F78D8EB2A6EFA7800A61FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F78D8EE2A6EFA7800A61FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F78D8F02A6EFA7800A61FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F78D8F62A6EFCA400A61FB2 /* LedBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedBoardViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +40,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F639CCE2D4E0A9B007A807A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F639CCA2D4E0999007A807A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3F78D8E22A6EFA7700A61FB2 /* AppDelegate.swift */,
+				3F78D8E42A6EFA7700A61FB2 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3F639CCB2D4E0A4A007A807A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3F639CD12D4E0CBD007A807A /* DisplayBoardView.swift */,
+				3F78D8E62A6EFA7700A61FB2 /* DisplayBoardViewController.swift */,
+				3F639CD32D4E0D41007A807A /* SettingView.swift */,
+				3F639CDA2D4E1654007A807A /* SettingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3F639CDC2D4E2747007A807A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3F639CD82D4E14F0007A807A /* ColorType.swift */,
+				3F639CDD2D4E2759007A807A /* SettingManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		3F78D8D62A6EFA7700A61FB2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +95,12 @@
 		3F78D8E12A6EFA7700A61FB2 /* LedBoard */ = {
 			isa = PBXGroup;
 			children = (
-				3F78D8F62A6EFCA400A61FB2 /* LedBoardViewController.swift */,
-				3F78D8E22A6EFA7700A61FB2 /* AppDelegate.swift */,
-				3F78D8E42A6EFA7700A61FB2 /* SceneDelegate.swift */,
-				3F78D8E62A6EFA7700A61FB2 /* ViewController.swift */,
-				3F78D8E82A6EFA7700A61FB2 /* Main.storyboard */,
 				3F78D8EB2A6EFA7800A61FB2 /* Assets.xcassets */,
-				3F78D8ED2A6EFA7800A61FB2 /* LaunchScreen.storyboard */,
 				3F78D8F02A6EFA7800A61FB2 /* Info.plist */,
+				3F78D8ED2A6EFA7800A61FB2 /* LaunchScreen.storyboard */,
+				3F639CDC2D4E2747007A807A /* Common */,
+				3F639CCB2D4E0A4A007A807A /* ViewController */,
+				3F639CCA2D4E0999007A807A /* Delegate */,
 			);
 			path = LedBoard;
 			sourceTree = "<group>";
@@ -86,6 +121,9 @@
 			dependencies = (
 			);
 			name = LedBoard;
+			packageProductDependencies = (
+				3F639CCD2D4E0A9B007A807A /* SnapKit */,
+			);
 			productName = LedBoard;
 			productReference = 3F78D8DF2A6EFA7700A61FB2 /* LedBoard.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 3F78D8D62A6EFA7700A61FB2;
+			packageReferences = (
+				3F639CCC2D4E0A9B007A807A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3F78D8E02A6EFA7700A61FB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +171,6 @@
 			files = (
 				3F78D8EF2A6EFA7800A61FB2 /* LaunchScreen.storyboard in Resources */,
 				3F78D8EC2A6EFA7800A61FB2 /* Assets.xcassets in Resources */,
-				3F78D8EA2A6EFA7700A61FB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +181,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F78D8E72A6EFA7700A61FB2 /* ViewController.swift in Sources */,
+				3F78D8E72A6EFA7700A61FB2 /* DisplayBoardViewController.swift in Sources */,
+				3F639CD92D4E14F0007A807A /* ColorType.swift in Sources */,
+				3F639CDB2D4E1654007A807A /* SettingViewController.swift in Sources */,
+				3F639CD42D4E0D41007A807A /* SettingView.swift in Sources */,
 				3F78D8E32A6EFA7700A61FB2 /* AppDelegate.swift in Sources */,
+				3F639CDE2D4E2759007A807A /* SettingManager.swift in Sources */,
+				3F639CD22D4E0CBD007A807A /* DisplayBoardView.swift in Sources */,
 				3F78D8E52A6EFA7700A61FB2 /* SceneDelegate.swift in Sources */,
-				3F78D8F72A6EFCA400A61FB2 /* LedBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F78D8E82A6EFA7700A61FB2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F78D8E92A6EFA7700A61FB2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F78D8ED2A6EFA7800A61FB2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,19 +332,21 @@
 				INFOPLIST_FILE = LedBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.LedBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -327,19 +365,21 @@
 				INFOPLIST_FILE = LedBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.LedBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -368,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F639CCC2D4E0A9B007A807A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F639CCD2D4E0A9B007A807A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F639CCC2D4E0A9B007A807A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F78D8D72A6EFA7700A61FB2 /* Project object */;
 }
