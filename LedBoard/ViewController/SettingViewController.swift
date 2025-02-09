@@ -29,7 +29,7 @@ class SettingViewController: UIViewController {
         
         navigationItem.rightBarButtonItem = checkButton
         navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.topItem?.title = nil
+        navigationController?.navigationBar.topItem?.title = ""
         navigationController?.setNavigationBarHidden(false, animated: false)
         
         colorSetting()
@@ -75,7 +75,7 @@ class SettingViewController: UIViewController {
         let trimmedText = mainView.messageField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         
         let settingData = SettingData(
-            text: trimmedText.isEmpty ? "화이팅!" : trimmedText,
+            text: trimmedText.isEmpty ? "place_supportMessage".localized : trimmedText,
             textColorIndex: selectedColorButton!.tag,
             fontSizeIndex: mainView.fontSizeSegment.selectedSegmentIndex
         )

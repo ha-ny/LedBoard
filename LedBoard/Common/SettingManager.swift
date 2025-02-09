@@ -41,7 +41,7 @@ class SettingManager {
             settingData = savedData
         } else {
             settingData = SettingData(
-                text: "붓을 눌러주세요",
+                text: "onboardMessage".localized,
                 textColorIndex: 2,
                 fontSizeIndex: 0
             )
@@ -64,7 +64,7 @@ class SettingManager {
     private static func loadSettings() -> SettingData? {
         guard let data = UserDefaults.standard.dictionary(forKey: settingKey),
               let text = data["text"] as? String,
-              let textColorIndex = data["textColorName"] as? Int,
+              let textColorIndex = data["textColorIndex"] as? Int,
               let fontSizeIndex = data["fontSizeIndex"] as? Int else { return nil }
 
         return SettingData(text: text, textColorIndex: textColorIndex, fontSizeIndex: fontSizeIndex)

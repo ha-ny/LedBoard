@@ -12,7 +12,7 @@ final class SettingsView: UIView {
     let messageField: UITextField = {
         let view = UITextField()
         view.borderStyle = .none
-        view.placeholder = "화이팅!"
+        view.placeholder = "place_supportMessage".localized
         view.font = .systemFont(ofSize: 15)
         view.backgroundColor = .black
         view.layer.borderWidth = 1.0
@@ -30,7 +30,7 @@ final class SettingsView: UIView {
     }()
     
     let fontSizeSegment = {
-        let view = UISegmentedControl(items: ["작게", "중간", "크게"])
+        let view = UISegmentedControl(items: ["font_Small".localized, "font_Medium".localized, "font_Large".localized])
         view.selectedSegmentIndex = 1
         return view
     }()
