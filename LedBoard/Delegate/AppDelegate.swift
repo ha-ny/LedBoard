@@ -6,11 +6,22 @@
 //
 
 import UIKit
+import GoogleMobileAds
+import AppTrackingTransparency
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        ATTrackingManager.requestTrackingAuthorization { status in
+           #if DEBUG
+            GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "755e19f6e5a3b4141324d78c3193f06b" ]
+           #else
+            GADMobileAds.sharedInstance().start(completionHandler: nil)
+           #endif
+      }
+        
         return true
     }
 

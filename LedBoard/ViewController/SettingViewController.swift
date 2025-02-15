@@ -6,11 +6,21 @@
 //
 
 import UIKit
+import AVFoundation
+import GoogleMobileAds
 
-class SettingViewController: UIViewController {
+class SettingViewController: UIViewController, GADBannerViewDelegate {
     
     private let mainView = SettingsView()
     private var selectedColorButton: UIButton?
+    
+    private lazy var bannerView: GADBannerView = {
+        let banner = GADBannerView(adSize: GADAdSizeBanner)
+        banner.adUnitID = MobileAds.shared.bannerAdUnitID
+        banner.rootViewController = self
+        banner.load(GADRequest())
+        return banner
+    }()
     
     override func loadView() {
         super.loadView()
@@ -31,9 +41,40 @@ class SettingViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.topItem?.title = ""
         navigationController?.setNavigationBarHidden(false, animated: false)
+
+        mainView.messageField.delegate = self
+
+          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+          view.addGestureRecognizer(tapGesture)
         
         colorSetting()
         dataSetting()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupBannerView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupBannerView()
+        mainView.messageField.becomeFirstResponder()
+    }
+    
+    private func setupBannerView() {
+        mainView.bannerPlaceholderView.addSubview(bannerView)
+        
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            bannerView.leadingAnchor.constraint(equalTo: mainView.bannerPlaceholderView.leadingAnchor),
+            bannerView.trailingAnchor.constraint(equalTo: mainView.bannerPlaceholderView.trailingAnchor),
+            bannerView.topAnchor.constraint(equalTo: mainView.bannerPlaceholderView.topAnchor),
+            bannerView.bottomAnchor.constraint(equalTo: mainView.bannerPlaceholderView.bottomAnchor)
+        ])
+        
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
     }
     
     func colorSetting() {
@@ -92,4 +133,16 @@ class SettingViewController: UIViewController {
         
         selectedColorButton = button
     }
+}
+
+extension SettingViewController: UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+          DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+              textField.selectAll(nil)
+          }
+      }
+
+      @objc func dismissKeyboard() {
+          view.endEditing(true)
+      }
 }

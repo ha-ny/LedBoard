@@ -17,6 +17,8 @@
 		3F639CE22D5254B0007A807A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3F639CE12D5254B0007A807A /* Localizable.xcstrings */; };
 		3F639CE52D5254EF007A807A /* localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F639CE42D5254EF007A807A /* localized.swift */; };
 		3F639CE72D525986007A807A /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3F639CE62D525986007A807A /* InfoPlist.xcstrings */; };
+		3F639CEF2D588EC1007A807A /* MobileAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F639CEE2D588EC1007A807A /* MobileAds.swift */; };
+		3F639CF22D589132007A807A /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 3F639CF12D589132007A807A /* GoogleMobileAds */; };
 		3F78D8E32A6EFA7700A61FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8E22A6EFA7700A61FB2 /* AppDelegate.swift */; };
 		3F78D8E52A6EFA7700A61FB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8E42A6EFA7700A61FB2 /* SceneDelegate.swift */; };
 		3F78D8E72A6EFA7700A61FB2 /* DisplayBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78D8E62A6EFA7700A61FB2 /* DisplayBoardViewController.swift */; };
@@ -35,6 +37,7 @@
 		3F639CE32D5254C9007A807A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3F639CE42D5254EF007A807A /* localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localized.swift; sourceTree = "<group>"; };
 		3F639CE62D525986007A807A /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		3F639CEE2D588EC1007A807A /* MobileAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAds.swift; sourceTree = "<group>"; };
 		3F78D8DF2A6EFA7700A61FB2 /* LedBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LedBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F78D8E22A6EFA7700A61FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F78D8E42A6EFA7700A61FB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F639CF22D589132007A807A /* GoogleMobileAds in Frameworks */,
 				3F639CCE2D4E0A9B007A807A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +86,7 @@
 				3F639CD82D4E14F0007A807A /* ColorType.swift */,
 				3F639CDD2D4E2759007A807A /* SettingManager.swift */,
 				3F639CE42D5254EF007A807A /* localized.swift */,
+				3F639CEE2D588EC1007A807A /* MobileAds.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			name = LedBoard;
 			packageProductDependencies = (
 				3F639CCD2D4E0A9B007A807A /* SnapKit */,
+				3F639CF12D589132007A807A /* GoogleMobileAds */,
 			);
 			productName = LedBoard;
 			productReference = 3F78D8DF2A6EFA7700A61FB2 /* LedBoard.app */;
@@ -168,6 +174,7 @@
 			mainGroup = 3F78D8D62A6EFA7700A61FB2;
 			packageReferences = (
 				3F639CCC2D4E0A9B007A807A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3F639CF02D589132007A807A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			productRefGroup = 3F78D8E02A6EFA7700A61FB2 /* Products */;
 			projectDirPath = "";
@@ -203,6 +210,7 @@
 				3F639CE02D523DC1007A807A /* SplashViewController.swift in Sources */,
 				3F639CD42D4E0D41007A807A /* SettingView.swift in Sources */,
 				3F78D8E32A6EFA7700A61FB2 /* AppDelegate.swift in Sources */,
+				3F639CEF2D588EC1007A807A /* MobileAds.swift in Sources */,
 				3F639CDE2D4E2759007A807A /* SettingManager.swift in Sources */,
 				3F639CD22D4E0CBD007A807A /* DisplayBoardView.swift in Sources */,
 				3F78D8E52A6EFA7700A61FB2 /* SceneDelegate.swift in Sources */,
@@ -361,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.LedBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -394,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.LedBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -439,6 +447,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		3F639CF02D589132007A807A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -446,6 +462,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F639CCC2D4E0A9B007A807A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		3F639CF12D589132007A807A /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F639CF02D589132007A807A /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

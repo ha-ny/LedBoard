@@ -43,6 +43,12 @@ final class SettingsView: UIView {
         return view
     }()
 
+    let bannerPlaceholderView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .clear
+        return view
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .black
@@ -58,6 +64,7 @@ final class SettingsView: UIView {
         addSubview(messageField)
         addSubview(fontSizeSegment)
         addSubview(colorStackView)
+        addSubview(bannerPlaceholderView)
     }
     
     func addMakeConstraints() {
@@ -79,6 +86,12 @@ final class SettingsView: UIView {
             $0.top.equalTo(fontSizeSegment.snp.bottom).offset(20)
             $0.centerX.equalToSuperview()
             $0.height.equalTo(50)
+        }
+        
+        bannerPlaceholderView.snp.makeConstraints {
+            $0.bottom.equalTo(self.safeAreaLayoutGuide)
+            $0.horizontalEdges.equalToSuperview().inset(25)
+            $0.height.equalTo(45)
         }
     }
 }
